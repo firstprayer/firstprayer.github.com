@@ -1,0 +1,13 @@
+---
+layout: page
+title: "My projects"
+description: ""
+---
+{% include JB/setup %}
+
+{% for project in site.data.projects %}
+<div class="">
+<h4>{{project.name}}</h4>
+<p>{{project.description}}</p>
+</div>
+{% endfor %}
