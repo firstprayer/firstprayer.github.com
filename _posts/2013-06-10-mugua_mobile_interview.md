@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "木瓜移动Android面试"
-description: ""
+description: "时间是6月3号吧。好歹是第一次面试，虽然拖到现在，还是记录一下。"
 category: ""
 tags: []
 ---

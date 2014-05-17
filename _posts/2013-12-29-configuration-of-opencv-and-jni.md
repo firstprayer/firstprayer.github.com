@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "configuration of opencv and jni"
+title: "OpenCV JNI配置"
 description: ""
 category: ""
 tags: []

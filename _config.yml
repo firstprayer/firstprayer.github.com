@@ -1,19 +1,20 @@
-title:            Site Title
-description:      Describe your website.
+title:            CodePrayer
+description:      一个关于计算机科学，编程，人生感悟的博客——关乎如何成为更好的人，如何把世界变得更好。A blog about computer science, programming, life inspiration; about how to be a better person and make a better world. 
 # Your site's domain goes here. Leave localhost server or blank when working locally.
 url:              http://localhost:4000
 disqus_shortname:
+encoding: utf-8
 
 # Owner/author information
 owner:
-  name:           Your Name
-  avatar:         bio-photo.jpg
-  bio:            "Describe your self."
-  email:          your@email.com
+  name:           Taylor Zhang(张泰源)
+  avatar:         avatar.jpg
+  bio:            "我是北京清华大学计算机软件专业大四的学生。在我的理解里，编程是一种改造世界的方式。我深信计算机的潜力还远远没有真正显现出来——它未来将更深入每个人的生活乃至基因。我正在做以及将来要做的事情，是推动这一进程，并防止它走向负面的极端。"
+  email:          zhangty10@gmail.com
   # Social networking links are used in author-bio sidebar. Update and remove as you like.
   twitter:
   facebook:
-  github:
+  github:         https://github.com/firstprayer
   stackoverflow:
   linkedin:
   instagram:
@@ -35,12 +36,12 @@ bing_verify:
 # Links to include in top navigation
 # For external links add external: true
 links:
-  - title: About
+  - title: 关于我 / About me
     url: /about/
-  - title: Posts
+  - title: 博文 / Posts
     url: /posts/
-  - title: Theme Setup
-    url: /theme-setup/
+  - title: 项目 / Projects
+    url: /projects/
   - title: Made Mistakes
     url: http://mademistakes.com
     external: true

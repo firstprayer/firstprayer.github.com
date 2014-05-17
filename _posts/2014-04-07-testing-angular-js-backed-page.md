@@ -1,17 +1,17 @@
 ---
 layout: post
-title: "Testing AngularJS-Backed Web Pages"
-description: ""
+title: "AngularJS单元测试In Practise / Testing AngularJS-Backed Web Pages"
+description: "Half a year ago I started to use AngularJS. As a MVC framework, its learning curve is a little ugly but really enjoyable to use once one has understood how it works. What's more, it's convenient to test. Here is my experience about testing AngularJS-backed web pages inside Django(or any other web framework, since only js files are involved). "
 category: ""
 tags: []
 ---
 
-Half a year ago I started to use AngularJS. As a MVC framework, its learning curve is a little ugly but really enjoyable to use once one has understood how it works. What's more, it's convenient to test. Here is my experience about testing AngularJS-backed web pages inside Django(or any other web framework, since only js files are involved).   
+
+Half a year ago I started to use AngularJS. As a MVC framework, its learning curve is a little ugly but really enjoyable to use once one has understood how it works. What's more, it's convenient to test. Here is my experience about writing unit tests for AngularJS-backed web pages inside Django(or any other web framework, since only js files are involved).   
 
 **Notice: I write tests after I've finished the web app inside Django. But perhaps this is not the best approach to development angular applications. Tests go first seems to be quite useful in my recent practises.**
 
 #### Here is how it goes:  
-##### Part One: Unit test  
 ##### 1. Environment  
 One need to set up [Karma](http://karma-runner.github.io/0.12/index.html) to run unit tests. In my practise, I install karma-cli and install all module globally so I could run the test anywhere I want. It's simple to do this, just install with a parameter **-g** like "npm install karma -g".  
 ##### 2. Project set up   
@@ -188,6 +188,3 @@ Here is an example about how to config multiple jobs in grunt to run all the tes
 		
 		grunt.loadNpmTasks('grunt-karma');
 	}
-
-##### Part 2: E2E Test
-I will add this section later.  
