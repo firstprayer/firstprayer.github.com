@@ -5,7 +5,6 @@ description: ""
 category: ""
 tags: []
 ---
-{% include JB/setup %}
 
 在知乎上一个关于到西藏旅行的问题下面看到一个回答，十分简单，但却很受触动：
 

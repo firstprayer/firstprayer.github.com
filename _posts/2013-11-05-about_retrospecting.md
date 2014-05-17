@@ -5,8 +5,6 @@ description: ""
 category: ""
 tags: []
 ---
-{% include JB/setup %}
-
 **每天都要做到的事：**  
 1. 站直了，相信自己  
 2. 友好对待每个人  

@@ -5,7 +5,6 @@ description: ""
 category: ""
 tags: []
 ---
-{% include JB/setup %}
 
 
 折腾了一个晚上，终于能够成功导出dll并且被java所调用了。流程大致如下：

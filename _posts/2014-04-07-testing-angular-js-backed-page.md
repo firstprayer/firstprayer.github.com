@@ -5,7 +5,6 @@ description: ""
 category: ""
 tags: []
 ---
-{% include JB/setup %}
 
 Half a year ago I started to use AngularJS. As a MVC framework, its learning curve is a little ugly but really enjoyable to use once one has understood how it works. What's more, it's convenient to test. Here is my experience about testing AngularJS-backed web pages inside Django(or any other web framework, since only js files are involved).   
 
