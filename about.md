@@ -1,30 +1,20 @@
 ---
 layout: page
 permalink: /about/
-title: About the Theme
-tagline: Minimal Mistakes, a Jekyll Theme
-tags: [about, Jekyll, theme, responsive]
-modified: 9-9-2013
+title: 关于我
+tagline: 
+tags: 
+modified: 05-18-2014
 comments: true
-image:
-  feature: texture-feature-02.jpg
-  credit: Texture Lovers
-  creditlink: http://texturelovers.com
 ---
 
-Jekyll is pretty rad and figured releasing a cleaned up version of [my site](http://mademistakes.com)[^1] as a theme for others to hack and build on would be fun. So here be that theme --- I call it **Minimal Mistakes**, a responsive Jekyll theme with large featured images and solid typography. 
+我是北京清华大学计算机软件专业大四的学生。在我的理解里，编程是一种改造世界的方式。我深信计算机的潜力还远远没有真正显现出来——它未来将更深入每个人的生活乃至基因。我正在做以及将来要做的事情，是推动这一进程，并防止它走向负面的极端。  
 
-## Minimal Mistakes is all about:
+大学期间我对互联网乃至互联网创业有着持续的关注和亲身参与。大二的时候，通过参与北京一帮热血技术大牛们的活动，认识了很多技术型创业者——他们的身份是架构师，著名互联网公司极早期员工、研发人员，产品经理，等等。至今非常感谢[伍星](http://weibo.com/wxstars)举办了这样一系列的活动，让我受益匪浅。  
 
-* Responsive templates. Looking good on mobile, tablet, and desktop.
-* Gracefully degrading in older browsers. Compatible with Internet Explorer 8+ and all modern browsers. 
-* Minimal embellishments --- content first.
-* Large feature images for posts and pages.
-* Author sidebar to pimp your bio, photo[^2], and social media links.
-* Simple and clear permalink structure *(ie: domain.com/category/post-title)*
+大三上我亲身参与了一个互联网创业项目，有幸和[陈阳Helium](http://weibo.com/heliumchen?topnav=1&wvr=5&topsug=1)一起奋斗。陈阳是一个非常有想法的人，除了在计算机科学很有Passion之外，更重要的是在技术领域之外带给了我很多不一样的想法。很遗憾这个项目最后由于模式和团队的问题没有继续下去，但带给我思想上的提升，对我而言至关重要。  
 
-<a markdown="0" href="{{ site.url }}/theme-setup" class="btn">Install Minimal Mistakes Theme</a>
+大三下我曾在香港交换一个学期。香港是一个金融城市，讲金钱讲利益，也讲义气讲兄弟。我其中一篇博文谈了我对香港的印象。这段经历也非常可贵，给我一个更加国际化的视野。  
 
-[^1]: Since open sourcing this theme I have released a couple other Jekyll themes. My website [Made Mistakes](http://mademistakes.com) is currently using a modified version of my [So Simple Theme](http://mmistakes.github.io/so-simple-theme/).
-
-[^2]: Fancy avatars provided by [Brandon Mathis](http://brandonmathis.com/projects/fancy-avatars/demo/) under a [Creative Commons Attribution 3.0 License](http://creativecommons.org/licenses/by/3.0/).
+<hr/>
+我的<a href="/files/resume_taiyuan_zhang.pdf">简历Resume</a>
