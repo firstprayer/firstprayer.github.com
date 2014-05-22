@@ -10,7 +10,7 @@ encoding:         utf-8
 # Owner/author information
 owner:
   name:           Taylor Zhang(张泰源)
-  avatar:         avatar.jpg
+  avatar:         avatar.JPG
   bio:            "我是北京清华大学计算机软件专业大四的学生。在我的理解里，编程是一种改造世界的方式。我深信计算机的潜力还远远没有真正显现出来——它未来将更深入每个人的生活乃至基因。我正在做以及将来要做的事情，是推动这一进程，并防止它走向负面的极端。"
   email:          zhangty10@gmail.com
   # Social networking links are used in author-bio sidebar. Update and remove as you like.
