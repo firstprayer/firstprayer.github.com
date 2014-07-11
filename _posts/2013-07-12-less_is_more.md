@@ -2,7 +2,7 @@
 layout: post
 title: "少即是多"
 description: "很奇怪，什么都想要，即使明知得不到真正的快乐，依然盲目地追求。或许是出于虚荣心，或许是出于焦躁不安，或许这就是人的天性使然。"
-category: ""
+category: "Life"
 tags: []
 ---
 

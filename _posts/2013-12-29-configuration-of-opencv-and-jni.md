@@ -2,7 +2,7 @@
 layout: post
 title: "OpenCV JNI配置"
 description: ""
-category: ""
+category: "ComputerScience"
 tags: []
 ---
 

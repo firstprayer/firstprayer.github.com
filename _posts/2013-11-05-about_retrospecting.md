@@ -2,7 +2,7 @@
 layout: post
 title: "吾日三省吾身"
 description: ""
-category: ""
+category: "Life"
 tags: []
 ---
 **每天都要做到的事：**  
