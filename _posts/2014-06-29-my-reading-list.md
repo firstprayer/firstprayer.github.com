@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "我的阅读清单"
-description: ""
+description: "大四狗马上就要走了，对自己这四年看过的书作一个整理，推荐几本个人觉得比较精品的书，欢迎讨论。（持续维护更新中）"
 category: "Reading"
 tags: []
 ---
