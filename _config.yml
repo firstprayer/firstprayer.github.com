@@ -1,72 +1,34 @@
-title:            CodePrayer
-description:      一个关于计算机科学，编程，人生感悟的博客——关乎如何成为更好的人，如何把世界变得更好。A blog about computer science, programming, life inspiration; about how to be a better person and make a better world. 
-# Your site's domain goes here. Leave localhost server or blank when working locally.
-# url:              http://localhost:4000
-url: http://firstprayer.github.io
+# General Jekyll Config
+highlighter: "pygments"
+url: http://example.com
+lsi: false
+exclude: [LICENSE, CNAME, README.md, .gitignore]
 
-disqus_shortname:
-encoding:         utf-8
+# Theme customization - please change from the defaults!
+theme:
+  # Color for top bar, links, etc
+  highlight_color: '#3498db'
 
-# Owner/author information
-owner:
-  name:           Taylor Zhang(张泰源)
-  avatar:         avatar.jpg
-  bio:            "我是北京清华大学计算机软件专业大四的学生。在我的理解里，编程是一种改造世界的方式。我深信计算机的潜力还远远没有真正显现出来——它未来将更深入每个人的生活乃至基因。我正在做以及将来要做的事情，是推动这一进程，并防止它走向负面的极端。"
-  email:          zhangty10@gmail.com
-  # Social networking links are used in author-bio sidebar. Update and remove as you like.
-  twitter:
-  facebook:
-  github:         firstprayer
-  stackoverflow:  
-  linkedin:
-  instagram:
-  lastfm:
-  tumblr:
-  pinterest:
-  foursquare:
-  steam:
-  dribbble:
-  # For Google Authorship https://plus.google.com/authorship
-  google_plus:
+  # Profile links on the left sidebar, leave blank to ignore
+  social:
+    github: swanson
+    #bitbucket: philipj
+    hacker_news: swanson
+    #stackexchange: 348619
+    #stackoverflow: 348619
+    twitter: _swanson
+    #facebook: zuck
+    #tumblr: animalygifs
+    #linkedin: philipjagielski
+    #gplus: 110552447039675960964
 
-# Analytics and webmaster tools stuff goes here
-google_analytics:
-google_verify:
-# https://ssl.bing.com/webmaster/configure/verify/ownership Option 2 content= goes here
-bing_verify:
+  # "Hi, I'm _______"
+  name: Matt Swanson
+  email: test@example.com
+  tagline: "weak opinions, strongly held"
 
-# Links to include in top navigation
-# For external links add external: true
-links:
-  - title: 关于我 / About me
-    url: /about/
-  - title: 博文 / Posts
-    url: /posts/
-  - title: 项目 / Projects
-    url: /projects/
+  # Google Analytics key, leave blank to ignore
+  google_analytics_key: UA-xxxx-x
 
-# http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
-timezone:    America/New_York
-future:      true
-highlighter: pygments
-markdown:    redcarpet
-
-# https://github.com/mojombo/jekyll/wiki/Permalinks
-permalink:   /:title/
-
-kramdown:
-  auto_ids: true
-  footnote_nr: 1
-  entity_output: as_char
-  toc_levels: 1..6
-  use_coderay: false
-
-  coderay:
-    coderay_line_numbers:
-    coderay_line_numbers_start: 1
-    coderay_tab_width: 4
-    coderay_bold_every: 10
-    coderay_css: class
-
-include: [".htaccess"]
-exclude: ["lib", "config.rb", "Capfile", "config", "log", "Rakefile", "Rakefile.rb", "tmp", "less", "*.sublime-project", "*.sublime-workspace", "test", "spec", "Gruntfile.js", "package.json", "node_modules"]
+  # Toggle "Postings are my own" disclaimer in footer
+  show_disclaimer: true
