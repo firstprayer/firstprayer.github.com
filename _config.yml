@@ -1,34 +1,33 @@
-# General Jekyll Config
+# visit https://github.com/mojombo/jekyll/wiki/Configuration for more settings
+
+paginate: 10 # pagination based on number of posts
+paginate_path: "page:num"
+exclude: ["README.md"] # files to exclude
 highlighter: "pygments"
-url: http://example.com
-lsi: false
-exclude: [LICENSE, CNAME, README.md, .gitignore]
+markdown: kramdown
 
-# Theme customization - please change from the defaults!
-theme:
-  # Color for top bar, links, etc
-  highlight_color: '#3498db'
 
-  # Profile links on the left sidebar, leave blank to ignore
-  social:
-    github: swanson
-    #bitbucket: philipj
-    hacker_news: swanson
-    #stackexchange: 348619
-    #stackoverflow: 348619
-    twitter: _swanson
-    #facebook: zuck
-    #tumblr: animalygifs
-    #linkedin: philipjagielski
-    #gplus: 110552447039675960964
+defaults:
+  -
+    scope:
+      path: "" # empty string for all files
+    values:
+      title: Prayer - PythonPlayer
 
-  # "Hi, I'm _______"
-  name: Matt Swanson
-  email: test@example.com
-  tagline: "weak opinions, strongly held"
+description: 一个关于计算机科学，编程，人生感悟的博客——关乎如何成为更好的人，如何把世界变得更好。
+author:
+  name: firstprayer
+  email: firstprayer@gmail.com 
+  github: firstprayer
+  # twitter: 
+  # pinterest: 
+  linkedin: Zhang Taiyuan
+  bio: 一个关于计算机科学，编程，人生感悟的博客——关乎如何成为更好的人，如何把世界变得更好。A blog about computer science, programming, life inspiration; about how to be a better person and make a better world. 
+  # email_md5: 
 
-  # Google Analytics key, leave blank to ignore
-  google_analytics_key: UA-xxxx-x
+title: Computer science. Entrepreneur. Life. 
+rss_path: feed.xml
+categories_path: categories.html
+tags_path: tags.html
 
-  # Toggle "Postings are my own" disclaimer in footer
-  show_disclaimer: true
+BASE_PATH:

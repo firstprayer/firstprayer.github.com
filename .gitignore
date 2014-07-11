@@ -1,4 +1,3 @@
-_site/
-.DS_Store
-.*.swp
-.idea
+_config.yml
+_site/*
+*Thumbs.db
