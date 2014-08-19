@@ -1,5 +1,6 @@
 ---
 layout: post
+comments: true
 title: "吾日三省吾身"
 description: ""
 category: "Life"

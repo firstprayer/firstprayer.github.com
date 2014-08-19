@@ -1,8 +1,7 @@
 ---
 layout: page
 permalink: /projects/
-title: 项目 / Projects -- CodePrayer
-tagline: 我参与过的项目
+title: 项目 / Selected projects
 modified: 5-18-2014
 comments: true
 ---

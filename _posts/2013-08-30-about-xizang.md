@@ -1,5 +1,6 @@
 ---
 layout: post
+comments: true
 title: "不在西藏，不在天边，就在这里，在你的内心"
 description: "在知乎上一个关于到西藏旅行的问题下面看到一个回答，十分简单，但却很受触动：
 

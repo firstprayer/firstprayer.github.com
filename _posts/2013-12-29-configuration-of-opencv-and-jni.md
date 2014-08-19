@@ -1,5 +1,6 @@
 ---
 layout: post
+comments: true
 title: "OpenCV JNI配置"
 description: ""
 category: "ComputerScience"
