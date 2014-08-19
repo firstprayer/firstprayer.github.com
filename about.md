@@ -8,13 +8,13 @@ modified: 05-18-2014
 comments: true
 ---
 
-我是北京清华大学计算机软件专业大四的学生。在我的理解里，编程是一种改造世界的方式。我深信计算机的潜力还远远没有真正显现出来——它未来将更深入每个人的生活乃至基因。我正在做以及将来要做的事情，是推动这一进程，并防止它走向负面的极端。  
+I'm currently a Master student in Carnegie Mellon University, Pittsburgh, PA, specializing in Computational Data Science. I received my bachelor degree of Computer Software in Tsinghua University, Beijing, China. 
 
-大学期间我对互联网乃至互联网创业有着持续的关注和亲身参与。大二的时候，通过参与北京一帮热血技术大牛们的活动，认识了很多技术型创业者——他们的身份是架构师，著名互联网公司极早期员工、研发人员，产品经理，等等。至今非常感谢[伍星](http://weibo.com/wxstars)举办了这样一系列的活动，让我受益匪浅。  
+During my study in Tsinghua I'd been making efforts to turn Computer Science technology into social values. I developed yunimpact.com with [Helium Chen](http://weibo.com/heliumchen?topnav=1&wvr=5&topsug=1). Though the website didn't make it to a successful business, it was still a precious experience to me. Afterward, I joined the founder team of [Qi-Ming-He-Xin](http://www.hexin.im/) in developing software to bring evolution to traditional K12 education, and my teammates and I had done some great things. 
 
-大三上我亲身参与了一个互联网创业项目，有幸和[陈阳Helium](http://weibo.com/heliumchen?topnav=1&wvr=5&topsug=1)一起奋斗。陈阳是一个非常有想法的人，除了在计算机科学很有Passion之外，更重要的是在技术领域之外带给了我很多不一样的想法。很遗憾这个项目最后由于模式和团队的问题没有继续下去，但带给我思想上的提升，对我而言至关重要。  
+I'm interested in **Machine Learning**, **Data Science and Business Intelligence**. You can expect to see some posts about these topics in my blog in the future. 
 
-大三下我曾在香港交换一个学期。香港是一个金融城市，讲金钱讲利益，也讲义气讲兄弟。我其中一篇博文谈了我对香港的印象。这段经历也非常可贵，给我一个更加国际化的视野。  
+I love music, and I play guitar. Kotaro Oshio is my favorite guitar player, and my favorite song is [Twilight](https://www.youtube.com/watch?v=Z2wkX70kDAw). 
 
 <hr/>
-我的<a href="/files/resume_taiyuan_zhang.pdf">简历Resume</a>
+Here is a brief <a href="/files/NewCV.pdf">resume</a> of mine.
