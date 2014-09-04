@@ -2,7 +2,7 @@
 layout: post
 comments: true
 title: "Build a Daily Habit List"
-description: "Building up your willpower by maintaining a Daily Habit List for yourself"
+description: "Building up your willpower by maintaining a Daily Habit List for yourself. It could be considered as a way to improve a person's Willpower, and I've been executing this method myself. "
 category: "Life"
 tags: ["self-management"]
 ---

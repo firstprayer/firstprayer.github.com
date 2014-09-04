@@ -1,8 +1,8 @@
 ---
 layout: post
 comments: true
-title: "我的阅读清单"
-description: "大四狗马上就要走了，对自己这四年看过的书作一个整理，推荐几本个人觉得比较精品的书，欢迎讨论。（持续维护更新中）"
+title: "My Reading List(我的阅读清单)"
+description: "This is a blog written in Chinese. Basically it's a summary of the books I read during my undergraduate study in Tsinghua University. "
 category: "Reading"
 tags: []
 ---
