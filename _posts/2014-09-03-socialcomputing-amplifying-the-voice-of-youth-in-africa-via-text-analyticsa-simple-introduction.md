@@ -4,6 +4,7 @@ title: "Hear People's Voice - Text Classification in SMS data"
 description: "This article is a summary of the KDD2013 best paper: 'Amplifying the Voice of Youth in Africa via Text Analytics'. It describes a system used to rank text messages so that people working in the U-report project in Uganga can discover and react to social issues faster and more efficiently. "
 category: 
 tags: ["computer science", "social computing", "data mining"]
+comments: true
 ---
 
 <script type="text/javascript"
