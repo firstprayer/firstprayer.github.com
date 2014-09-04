@@ -1,19 +1,9 @@
 ---
 layout: page
 permalink: /projects/
-title: 项目 / Selected projects
+title: Selected projects
 modified: 5-18-2014
 comments: true
 ---
 
-{% for project in site.data.projects %}
-<div>
-	<h1>{{ project.name }}</h1>
-	<p>{{ project.description }}</p>
-	{% if project.project_url %}
-	<p>
-		Interested people can visit <a href="{{project.project_url}}">here</a>
-	</p>
-	{% endif %}
-</div>
-{% endfor %}
+Please refer to my [resume](/files/resume.pdf) for details. 

@@ -1,7 +1,7 @@
 ---
 layout: page
 permalink: /about/
-title: 关于我
+title: About me
 tagline: 
 tags: 
 modified: 05-18-2014
@@ -17,4 +17,4 @@ I'm interested in **Machine Learning**, **Data Science and Business Intelligence
 I love music, and I play guitar. Kotaro Oshio is my favorite guitar player, and my favorite song is [Twilight](https://www.youtube.com/watch?v=Z2wkX70kDAw). 
 
 <hr/>
-Here is a brief <a href="/files/NewCV.pdf">resume</a> of mine.
+Here is a brief <a href="/files/resume.pdf">resume</a> of mine.
