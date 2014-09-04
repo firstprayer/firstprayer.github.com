@@ -29,11 +29,11 @@ The system aims at **messages ranking** for a specific message category, because
 
 Well, I'm a CS guy, so I should somehow explain how the system works. If not interested in this section, jump to the next section which might be more interesting. 
 
-So The authors of the system and this paper tried many methods. The first one is to construct a **key-word list** for each category. The result was surprisingly not bad, at least for some categories like *health & nutrition*. However, when it comes to the other categories like *social policy*, the list is obviously insufficient to find out related messages.   
+So The authors of the system and this paper tried many methods. The first one was to construct a **key-word list** for each category. The result was surprisingly not bad, at least for some categories like *health & nutrition*. However, when it came to the other categories like *social policy*, the list was obviously insufficient to find out related messages.   
 
-The next approach is **text classification**. Both Naive Bayes and SVM are tried in the experiment, which shows that classification methods are helpful in finding out discriminative terms. For example, the top 20 most discriminative terms for the category of *violence against children* are: **defilement, child, female, fgm, sacrifice, defiled, raped, abuse, circumcision, girl, violence, genital, rape, mutilation, practice, defile, cases, defiling, man, beaten**, and only 7 of them are in the keyword list provided by experts. On average this approach performs better.   
+The next approach was **text classification**. Both Naive Bayes and SVM were tried in the experiment, which showed that classification methods were helpful in finding out discriminative terms. For example, the top 20 most discriminative terms for the category of *violence against children* were: **defilement, child, female, fgm, sacrifice, defiled, raped, abuse, circumcision, girl, violence, genital, rape, mutilation, practice, defile, cases, defiling, man, beaten**, and only 7 of them were in the keyword list provided by experts. On average this approach performed better.   
 
-At this step, the authors noticed a problem: **spelling errors are common**, because English proficiency among the system users is not always high. This is a big noise in the data. So they developed a process to correct spelling errors and map abbreviations to their canonical forms(i.e. **b4** to **before**). This pre-processing of text helps improving the performance of both approaches mentioned above.  
+At this step, the authors noticed a problem: **spelling errors are common**, because English proficiency among the system users is not always high. This was a big noise in the data. So they developed a process to correct spelling errors and map abbreviations to their canonical forms(i.e. **b4** to **before**). This pre-processing of text helped improving the performance of both approaches mentioned above.  
 
 Next, the authors thought even though text classification methods are better, the keyword lists provided by experts should not be discarded completely because they do provide useful prior knowledge. So a **dual supervision** method was used. The method they adopted is called [Pooling Multinomails](http://www.prem-melville.com/pooling-multinomials-kdd09.pdf), which can integrate prior lexical knowledge with the training data to obtain more predictive model.   
 
@@ -53,15 +53,15 @@ P(w_i\|c_j)=a_1P_e(w_i\|c_j)+a_2P_f(w_i\|c_j)
 \]
 </p>
 
-To select <script type="math/tex">a_i</script>, the author indicate two methods: one is just 0.5-0.5, the other one uses the equation <script type="math/tex">a_i=log\frac{auc_i}{1 - auc_i}</script> while <script type="math/tex">auc_i</script> is [*AUC*](http://en.wikipedia.org/wiki/Area_under_the_curve_(pharmacokinetics)) of model i, which indicates how well the model performs on the data. However the authors claimed using the naive 0.5 and 0.5 weight was actually better, and they thought over-fitting might be the reason. 
+To select <script type="math/tex">a_i</script>, the author gave two methods: one is just 0.5-0.5, the other one uses the equation <script type="math/tex">a_i=log\frac{auc_i}{1 - auc_i}</script> while <script type="math/tex">auc_i</script> is [*AUC*](http://en.wikipedia.org/wiki/Area_under_the_curve_(pharmacokinetics)) of model i, which indicates how well the model performs on the data. However the authors claimed using the naive 0.5 and 0.5 weight was actually better, and they thought over-fitting might be the reason. 
 
-The model built up by now is actually quite satisfying. However, the authors observed that the **false-positive rate** at the top results is **unacceptably high**. Their solution was to re-rank the results. So again, the keyword list became very useful. The authors took the following strategy:
+The model built up by now was actually quite satisfying. However, the authors observed that the **false-positive rate** at the top results was **unacceptably high**. Their solution was to re-rank the results. So again, the keyword list became very useful. The authors took the following strategy:
 
 - If a message matches at least one keyword, it should be ranked above messages that do not have a match (irrespective of model score).  
 - Amongst all messages that have a match, retain the ordering given by the model.  
 - All messages that do not have a match, appear at the bottom of the list, ranked by model score.  
 
-Through this re-rank process, the system could now achieve a higher accuracy within top results. People inspecting these message should be happy about that they can find relevant messages much faster. 
+Through this re-rank process, the system could achieve a higher accuracy within top results. People inspecting these message should be happy about that they can find relevant messages much faster. 
 
 ### 4. Impacts & Comments
 The impacts of this system is as the interesting as the technical methods mentioned in this technical paper. With the help of the system, the U-report staff can better understand and react to people's need, and better allocate their limited resources. At the time the paper was published, using the useful assistance from this system, the U-report project had resulted in several notable policy changes in Uganga, such as the Children Act Amendment against corporal punishment in schools. All Chief Administrative Officers (one for each of the 112 districts) have agreed to receive SMS updates on issues in their localities. The system also supported the visualization of trending topics in development issues by geographic regions.   
