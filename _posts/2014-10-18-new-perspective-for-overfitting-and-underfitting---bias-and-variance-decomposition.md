@@ -4,6 +4,7 @@ title: "New perspective for Overfitting and Underfitting -- Bias and Variance De
 description: "Bias-Variance is a mathematical way to understand what underfitting and overfitting mean. In practise we should find a balance point to avoid either bias or vairance being too large."
 category: "machine-learning"
 tags: ["computer-science"]
+published: false
 ---
 
 <style type="text/css">
