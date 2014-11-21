@@ -4,7 +4,6 @@ title: "New perspective for Overfitting and Underfitting -- Bias and Variance De
 description: "Bias-Variance is a mathematical way to understand what underfitting and overfitting mean. In practise we should find a balance point to avoid either bias or vairance being too large."
 category: "machine-learning"
 tags: ["computer-science"]
-published: false
 ---
 
 <style type="text/css">
@@ -24,7 +23,6 @@ published: false
 </script>
 
 You probably all heard of overfitting and underfitting. You might also heard of [Occam's razor](http://en.wikipedia.org/wiki/Occam's_razor), which is borrowed from philosophy as a preference for simpler model than complex model in machine learning to avoid overfitting. However, these concepts either sound too empirical or too philosophical. [Bias and Variance decomposition](http://en.wikipedia.org/wiki/Bias%E2%80%93variance_tradeoff) is a mathemetical approach for the analysis of this problem.
-
 So how does it work? Let's get an intuitive understanding of it by looking at the polynomial regression problem. 
 
 <img src="/images/bias-variance-1.png" class="img-medium">
