@@ -8,6 +8,8 @@ baseurl:
 redcarpet:
   extensions: [strikethrough, tables]
 
+comments: true
+
 sass:
   sass_dir: public/css
   style: :compressed
