@@ -92,7 +92,7 @@ E_{X,Y,D_n}[ (\hat{f_n}(X) - f^*(X))^2 ] = E_{X,Y,D_n}[(\hat{f_n}(X) - E_{D_n}[ 
 </script>
 <hr/>
 
-Here <script type="math/tex">\hat{f_n}</script> is the model we train on Dataset <script type="math/tex">D_n</script>. Let's take a look at the two terms on the right side of the equation. The first term measures the variance of the models we get each time(**Variance**), the second term measures that on average, how far our models are from the groundtruth(**Bias**).
+Dn is the dataset we use. Let's take a look at the two terms on the right side of the equation. The first term measures the variance of the models we get each time(**Variance**), the second term measures that on average, how far our models are from the groundtruth(**Bias**).
 
 Now let's see how can this guide us through machine learning practise. Bias is how well the model approximates the groundtruth(represented by the observed data). A simpler model (linear model in the previous example) will have larger bias. When the bias is always too big, then the model is underfitting, which means it doesn't have enough flexibility to capture the right model. On the other hand, when we choose a model that's too flexible, it may be fitting the data points very well, but a small change of the dataset could produce a completely different model, so the variance would be large. Neither is good. In practise, we should try to find a balance. The figure below could better illustrate the idea:
 
