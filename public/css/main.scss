@@ -128,8 +128,9 @@ footer {
 
 /*----------------------------------------------------------------------------*/
 
+
 .highlight {
-  padding: 30px;
+  padding: 10px;
   border-radius: 6px;
   background-color: #272822;
   color: #f8f8f2;
@@ -280,4 +281,15 @@ dl,
   #logo {
     background-position: center center;
   }
+}
+
+pre { white-space: pre; overflow: auto; }
+pre {
+  display: block;
+  padding: 9.5px;
+  margin: 0 0 10px;
+  font-size: 15px;
+  line-height: 1.428571429;
+  word-break: break-all;
+  word-wrap: break-word;
 }
