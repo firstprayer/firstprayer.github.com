@@ -14,3 +14,6 @@ comments: true
 sass:
   sass_dir: public/css
   style: :compressed
+
+gems:
+  - jekyll-sitemap
