@@ -6,10 +6,10 @@ category:
 tags: []
 ---
 
-[Spark](https://spark.apache.org/) is a computational framework quite popular recently. Compared with Hadoop, it offers much nicer abstractions(e.g. Resilient Distributed Datasets). Here's how to configure a standalone-mode spark instance on ubuntu(I use 12.04). If you don't have the patience and just want to play, you can download it from [here](https://registry.hub.docker.com/u/firstprayer/big-data-related/) and follow the intruction at the end of this post.
+[Spark](https://spark.apache.org/) is a computational framework quite popular recently. Compared with Hadoop, it offers much nicer abstractions(e.g. Resilient Distributed Datasets). Here's how to configure a standalone-mode spark instance on ubuntu(I use 12.04). If you don't have the patience and just want to play, you can download the docker image from [here](https://registry.hub.docker.com/u/firstprayer/big-data-related/) and follow the instruction at the end of this post.
 
 ### 1. Set up Java
-In this case Oracle JDK is better than OpenJDK. To install Oracle SDK, first run:
+In this case Oracle JDK is better than OpenJDK. To install Oracle JDK, first run:
 	
 {% highlight sh %}
 sudo apt-get install python-software-properties
