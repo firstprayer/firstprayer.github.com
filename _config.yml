@@ -1,6 +1,7 @@
 markdown: kramdown
 highlighter: null
 permalink: /:title
+highlighter: pygments
 
 url:
 baseurl:
