@@ -9,9 +9,6 @@ tags: []
 <script type="text/javascript"
   src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
 </script>
-<script type="text/javascript"
-   src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
-</script>
 
 Recently Geoffrey Hinton had made a presentation about "Dark Knowledge" in TTIC to shared his insights about ensemble methods in machine learning and deep neural network. This blog is kind of a summary of his presentation after I watched the [video](https://www.youtube.com/watch?v=EK61htlw8hY) and the [slide](http://www.ttic.edu/dl/dark14.pdf).
 
