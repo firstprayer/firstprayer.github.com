@@ -4,3 +4,4 @@ _site/*
 build/
 .sass_cache/
 .DS_Store
+.sass-cache/
