@@ -24,7 +24,7 @@
 
 			function next(){
 				var strings = [
-					'准备好了么',
+					'都叫你三思了',
 					'有没有觉得这个音乐很燃',
 					'很熟悉',
 					'猜对了就是《非诚勿扰》!',
@@ -54,26 +54,31 @@
 			
 
 			function start(){
-				var words = $('#banner').find('.col-md-3');
-				var idx = 0;
-				var interval = 300;
+				setTimeout(function(){
+					$('#backmusic')[0].play();
 
-				function callback(){
-					$(words[idx]).show();
-					idx += 1;
-					if(idx < words.length){
-						setTimeout(callback, interval);
-					}else{
-						next();
+					var words = $('#banner').find('.col-md-3');
+					var idx = 0;
+					var interval = 300;
+
+					function callback(){
+						$(words[idx]).show();
+						idx += 1;
+						if(idx < words.length){
+							setTimeout(callback, interval);
+						}else{
+							next();
+						}
 					}
-				}
+					
+					setTimeout(callback, interval);
+				}, 5000);
 				
-				setTimeout(callback, interval);
 			}
 			
 		</script>
 
-		<audio autoplay onloadeddata="start()">
+		<audio id="backmusic" onloadeddata="start()">
 	        <source src="/assets/feichengwurao.mp3" type="audio/mp3">
 	    </audio>
 	</body>

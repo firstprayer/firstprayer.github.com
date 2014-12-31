@@ -6,6 +6,7 @@
 <head>
     <title>NewYear</title>
 
+    <meta charset="utf-8" />
     <!-- If Chrome Frame is enabled, let's use it! -->
     <meta http-equiv="X-UA-Compatible" content="chrome=1" />
 
@@ -42,7 +43,7 @@
         // we need a full screen canvas, but the canvas tag doesn't support percentage widths
         // so we simply write out the canvas tag using javascript
         document.write('<div style="background:url(/assets/images/background.jpg) repeat-x;position:absolute;left:0;top:'+($(window).height()-193)+'px;width:100%;height:200px;">'
-            + '<div id="navigation" style="left:' + ($(window).width() / 2 - 100) + 'px;"><a class="btn btn-success" style="width:100%;font-size:18px;padding-top: 15px;padding-bottom:15px;" href="/phase2.html">There\'s More &gt;&gt;</a></div>'
+            + '<div id="navigation" style="left:' + ($(window).width() / 2 - 100) + 'px;"><a class="btn btn-success" style="width:100%;font-size:18px;padding-top: 15px;padding-bottom:15px;" href="/phase2.html">点我前请三思</a></div>'
             + '</div>');
         document.write('<canvas id="cv" width="'+$(window).width()+'" height="'+($(window).height()-100)+'" style="position:absolute;left:0;top:0;"></canvas>');
         // obviously, this become wrong if the browser window changes size
