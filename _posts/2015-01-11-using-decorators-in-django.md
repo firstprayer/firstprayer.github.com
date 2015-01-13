@@ -36,7 +36,7 @@ def some_func():
 some_func = verbose(some_func)
 {% endhighlight %}
 
-Or, use the syntax super provided by Python, just:
+Or, use the syntax suger provided by Python, just:
 
 {% highlight python %}
 @verbose
@@ -111,7 +111,7 @@ We write a decorator <code>writers_required</code>:
 
 {% highlight python %}
 def writers_required(controller):
-    """Require the user log on, and has 'writer' role"""
+    """Require the user log on, and belongs to the 'writer' role"""
     def inner(*args, **kwargs):
         request = args[0]
         if 'user' not in request.session:
@@ -242,6 +242,8 @@ def publish_article(request, article_id):
 {% endhighlight %}
 
 From this very simple example, we can see that decorator is really a great tool for reusing codes. 
+
+Some decorators above are already provided by Django, so it seems unnecessary to implement it again. However, these decorators, as well as the idea of using decorators, are not restricted in Django, nor in Python only. When we're using other python-based web framework, or even web frameworks in other languages, we can always consider using decorators(even the language itself doesn't support such syntax). 
 
 
 
