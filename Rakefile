@@ -68,6 +68,7 @@ task :post do
     post.puts 'description: ""'
     post.puts "category: #{category}"
     post.puts "tags: #{tags}"
+    post.puts "published: false"
     post.puts "---"
   end
 end # task :post
