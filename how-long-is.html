@@ -1,0 +1,153 @@
+<!Doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+<meta name="description" content="A tool for visualizing how long an object will be given the length description">
+<meta name="keywords" content="Ruler,length,long,visualization,unit converter,unit conversion">
+<meta name="author" content="Taiyuan Zhang">
+
+	<style type="text/css">
+		#display {
+			height: 5px;
+			background: #000;
+			width: 0;
+		}
+	</style>
+</head>
+
+<body>
+	<div>Descibe the length (10 cm, 2.4 inches, 2 feet 7 inches, 6 inches 1/4 inches, etc)</div>
+	<div>
+		<input type='text' id='input' />
+		<span id='error' style='color:red'></span>
+	</div>
+	<div style='margin-top: 10px'>
+		<div id='display'></div>
+	</div>
+
+<script   src="https://code.jquery.com/jquery-2.2.4.min.js"   integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="   crossorigin="anonymous"></script>
+
+<script type="text/javascript">
+(function($, window) {
+
+var StandardMeasure = 'm';
+
+var Unit = function (value) { this.value = value; };
+Unit.prototype.toStandard = function () {
+	throw new Error('Not implemented');
+}
+var makeUnitClass = function (scaleFactor) {
+	var newClass = function () { Unit.apply(this, arguments); };
+	newClass.prototype.toStandard = function () { return this.value * scaleFactor; };
+	return newClass;
+}
+var Meter = makeUnitClass(1);
+var Centimeter = makeUnitClass(0.01);
+var Yard = makeUnitClass(0.9144);
+var Foot = makeUnitClass(0.3048);
+var Inch = makeUnitClass(0.0254);
+
+var createUnit = function(staticClass, num) { return new staticClass(num); }
+
+function updateLength(length, $displayDom) {
+	$displayDom.width(length * 100 + 'cm');
+}
+
+var INCORRECT_FORMAT_ERROR = 'Incorrect format',
+	INVALID_UNIT_ERROR_PREFIX = 'Invalid unit: ',
+	MUST_BE_POSITIVE_NUMBER = 'Number must be positive: ';
+
+function parseUnit(stringValue) {
+	stringValue = $.trim(stringValue);
+	var data = stringValue.split(' ');
+	if (data.length % 2 !== 0 || data.length < 2) {
+		throw new Error(INCORRECT_FORMAT_ERROR);
+	}
+
+	var cnt = data.length / 2;
+	var units = [];
+	for (var i = 0; i < cnt; i++) {
+		var numString = data[i * 2],
+			unitName = data[i * 2 + 1];
+		
+		var num = null;
+		// Maybe in the stye of n/m.
+		var parts = numString.split('/');
+		var num = parseFloat(numString);
+		if (parts.length === 2) {
+			var n = parseFloat(parts[0]),
+				m = parseFloat(parts[1]);
+			num = n / m;
+		}
+		
+		if (! (num > 0)) {
+			num = parseFloat(numString);
+		}
+
+		if (! (num > 0)) {
+			throw new Error(MUST_BE_POSITIVE_NUMBER + numString);
+		}
+
+		var unitMatch = function (unitCandidates) {
+			if (unitCandidates.indexOf(unitName) >= 0) {
+				return true;
+			} else {
+				return false;
+			}
+		}
+
+		units.push((function() {
+			if (unitMatch(['m', 'meter', 'meters'])) { return new Meter(num); }
+			if (unitMatch(['cm', 'centimeter', 'centimeters'])) { return new Centimeter(num); }
+			if (unitMatch(['f', 'foot', 'feet', 'foots', 'feets'])) { return new Foot(num); }
+			if (unitMatch(['y', 'yard', 'yards'])) { return new Yard(num); }
+			if (unitMatch(['inch', 'inches'])) { return new Inch(num); }
+
+			throw new Error(INVALID_UNIT_ERROR_PREFIX + unitName);
+		}()));
+	}
+	return units;
+}
+
+function getLength(units) {
+	var val = 0;
+	for (var i = 0; i < units.length; i++) {
+		val += units[i].toStandard();
+	}
+	return val;
+}
+
+var $inputDom = $('#input'),
+	$displayDom = $('#display'),
+	$errorMsgDom = $('#error');
+
+$inputDom.on('keyup', function(e) {
+	var stringValue = $(this).val();
+	var units = null;
+	try {
+		units = parseUnit(stringValue);
+	} catch (err) {
+		$errorMsgDom.html(err.message);
+		$displayDom.width(0);
+		return;
+	}
+	$errorMsgDom.html('');
+	updateLength(getLength(units), $displayDom);
+});
+
+// Inline test cases.
+function assertEq(a, b) {
+	if (Math.abs(a - b) > 0.0000001) {
+		$errorMsgDom.html(a + ' != ' + b);
+	}
+}
+assertEq(getLength(parseUnit('10 cm')), '0.1');
+assertEq(getLength(parseUnit('11.5 cm 10 cm')), '0.215');
+assertEq(getLength(parseUnit('1/4 m 10 cm')), '0.35');
+
+})(jQuery, window);
+</script>
+
+</body>
+
+</html>
