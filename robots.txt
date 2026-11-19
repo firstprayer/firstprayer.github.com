@@ -1,0 +1,9 @@
+# robots.txt for firstprayer.github.io
+# Crawlers read this file only at the host root, so it also covers
+# project sites such as /pdf-editor/.
+# All crawlers are allowed, including search, AI agent and AI training crawlers.
+
+User-agent: *
+Allow: /
+
+Sitemap: https://firstprayer.github.io/pdf-editor/sitemap.xml
